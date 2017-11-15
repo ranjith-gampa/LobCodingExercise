@@ -1,0 +1,70 @@
+extends layout
+
+block content
+
+  h1.title SEND LETTER USING LOB API
+  form(name="letter_content", method="post", action="sendLetter")
+    h2.fromAddress FROM ADDRESS
+    div.input
+      span.label Name
+      //span.label #{name}
+      input(type="text", name="name", value="#{name}" readonly)
+
+    div.input
+      span.label Address Line1
+      //span.label #{addressline1}
+      input(name="addressline1", value="#{addressline1}" readonly)
+    div.input
+      span.label Address Line2
+      //span.label #{addressline2}
+      input(type="text", name="addressline2", value="#{addressline2}" readonly)
+    div.input
+      span.label City
+      //span.label #{city}
+      input(type="text", name="city", value="#{city}" readonly)
+    div.input
+      span.label State
+      //span.label #{state}
+      input(type="text", name="state", value="#{state}" readonly)
+    div.input
+      span.label Country
+      //span.label #{country}
+      input(type="text", name="country", value="#{country}" readonly)
+    div.input
+      span.label ZipCode
+      //span.label #{zip}
+      input(type="text", name="zip", value="#{zip}" readonly)
+
+    h2.toAddress TO ADDRESS
+
+    div.input
+        span.label Name
+        //span.label #{name}
+        input(type="text", name="toname", value="#{toname}" readonly)
+    div.input
+        span.label Address Line1
+        //span.label #{addressline1}
+        input(type="text", name="toaddressline1", value="#{toaddressline1}" readonly)
+    div.input
+        span.label Address Line2
+        //span.label #{addressline2}
+        input(type="text", name="toaddressline2", value="#{toaddressline2}" readonly)
+    div.input
+        span.label City
+        //span.label #{city}
+        input(type="text", name="tocity", value="#{tocity}" readonly)
+    div.input
+        span.label State
+        //span.label #{state}
+        input(type="text", name="tostate", value="#{tostate}" readonly)
+    div.input
+        span.label ZipCode
+        //span.label #{zip}
+        input(type="text", name="tozip", value="#{tozip}" readonly)
+
+    div.input
+        span.label Message
+        //span.label #{message}
+        textarea(name="message", cols="40", rows="5" readonly=).form-control #{message}
+      //#{message}
+    button.btn.btn-primary(type='submit') Send Letter
