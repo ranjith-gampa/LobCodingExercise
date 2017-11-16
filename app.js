@@ -10,6 +10,7 @@ var path = require('path');
 var request = require('request');
 var tinyurl = require('tinyurl');
 var lob = require('lob')(lob_api_key);
+var server = require('connect')
 
 var arg = process.argv.slice(2);
 var rawdata;
