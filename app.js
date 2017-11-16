@@ -1,5 +1,5 @@
-var google_api_key = "AIzaSyDYXdvSuBqsP_ToM7fWN6iFKsdEPNubWfI";
-var lob_api_key = "test_775b4abdae34271f21b71d0e57b6c3a6dd5";
+var google_api_key = "Your Google API Key";
+var lob_api_key = "Your Lob API Key";
 
 const fs = require('fs');
 var express = require('express');
